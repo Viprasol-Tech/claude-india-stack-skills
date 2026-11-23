@@ -1,0 +1,15 @@
+{
+  "name": "india-stack",
+  "displayName": "India Stack",
+  "version": "1.0.0",
+  "description": "Claude Code skills for building in India: UPI deep links, QR, status checks and AutoPay; GST tax split, invoices, e-invoicing and e-way bills; GSTIN/PAN/IFSC/Aadhaar validation and lakh/crore formatting; Aadhaar eKYC, Data Vault and DigiLocker; Account Aggregator consent flows; RBI card, localisation and refund rules; and the DPDP Act 2023 with DPDP Rules 2025.",
+  "author": {
+    "name": "Viprasol Tech",
+    "email": "support@viprasol.com",
+    "url": "https://viprasol.com"
+  },
+  "homepage": "https://github.com/Viprasol-Tech/claude-india-stack-skills",
+  "repository": "https://github.com/Viprasol-Tech/claude-india-stack-skills",
+  "license": "MIT",
+  "keywords": ["india", "india-stack", "upi", "npci", "gst", "e-invoice", "gstin", "pan", "aadhaar", "digilocker", "account-aggregator", "rbi", "dpdp", "claude-code-skills"]
+}

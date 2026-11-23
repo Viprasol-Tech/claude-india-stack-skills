@@ -1,0 +1,17 @@
+{
+  "name": "claude-india-stack-skills",
+  "description": "Free Claude Code skills for building products in India: UPI payments, GST invoicing and e-invoicing, PAN/GSTIN/Aadhaar validation, Aadhaar eKYC and DigiLocker, Account Aggregator, RBI payment rules and the DPDP Act.",
+  "owner": {
+    "name": "Viprasol Tech",
+    "url": "https://viprasol.com"
+  },
+  "plugins": [
+    {
+      "name": "india-stack",
+      "source": "./plugins/india-stack",
+      "description": "7 skills: upi-payments, gst-invoicing, india-data-validation, aadhaar-ekyc, account-aggregator, rbi-payment-rules and dpdp-privacy, with tested GST, validation and UPI link scripts.",
+      "category": "finance",
+      "tags": ["india", "upi", "gst", "e-invoice", "aadhaar", "digilocker", "account-aggregator", "rbi", "dpdp"]
+    }
+  ]
+}
