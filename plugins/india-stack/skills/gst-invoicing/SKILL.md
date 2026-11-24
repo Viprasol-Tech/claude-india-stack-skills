@@ -94,14 +94,13 @@ amounts payable in returns.
 ## Calculator
 
 ```bash
-G=${CLAUDE_SKILL_DIR}/scripts/gst.py
-python $G calc --supplier-state 27 --pos 27 --item "Laptop,1,52000,18" --item "Mouse,2,499.50,18"
-python $G calc --supplier-state 27 --pos 29 --item "Consulting,1,100000.40,18" --round-total
-python $G calc --supplier-state 27 --pos 96 --export-or-sez --lut --item "Software export,1,500000,18"
-python $G calc --supplier-state 07 --pos 07 --items-json items.json --json
-python $G invoice-no INV/2026-27/0001
-python $G words 125000.50          # Rupees One Lakh Twenty Five Thousand and Paise Fifty Only
-python $G format 98765432.1        # ₹9,87,65,432.10
+python ${CLAUDE_SKILL_DIR}/scripts/gst.py calc --supplier-state 27 --pos 27 --item "Laptop,1,52000,18" --item "Mouse,2,499.50,18"
+python ${CLAUDE_SKILL_DIR}/scripts/gst.py calc --supplier-state 27 --pos 29 --item "Consulting,1,100000.40,18" --round-total
+python ${CLAUDE_SKILL_DIR}/scripts/gst.py calc --supplier-state 27 --pos 96 --export-or-sez --lut --item "Software export,1,500000,18"
+python ${CLAUDE_SKILL_DIR}/scripts/gst.py calc --supplier-state 07 --pos 07 --items-json items.json --json
+python ${CLAUDE_SKILL_DIR}/scripts/gst.py invoice-no INV/2026-27/0001
+python ${CLAUDE_SKILL_DIR}/scripts/gst.py words 125000.50          # Rupees One Lakh Twenty Five Thousand and Paise Fifty Only
+python ${CLAUDE_SKILL_DIR}/scripts/gst.py format 98765432.1        # ₹9,87,65,432.10
 ```
 
 Item format: `description,qty,unit_price,rate[,discount]`. The place of supply

@@ -36,9 +36,8 @@ your acquirer) let apps skip a warning; unsigned ones show "source could not be
 verified". Your aggregator usually generates the final, signed intent or QR.
 
 ```bash
-U=${CLAUDE_SKILL_DIR}/scripts/upi_link.py
-python $U build --pa shop@okaxis --pn "Asha Stores" --am 499 --tr ORD-1001 --mode 01
-python $U parse "upi://pay?pa=shop@okaxis&pn=Asha%20Stores&am=499.00&cu=INR&tr=ORD-1001"
+python ${CLAUDE_SKILL_DIR}/scripts/upi_link.py build --pa shop@okaxis --pn "Asha Stores" --am 499 --tr ORD-1001 --mode 01
+python ${CLAUDE_SKILL_DIR}/scripts/upi_link.py parse "upi://pay?pa=shop@okaxis&pn=Asha%20Stores&am=499.00&cu=INR&tr=ORD-1001"
 ```
 
 ## Which flow

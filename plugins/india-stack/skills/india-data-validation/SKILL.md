@@ -30,15 +30,14 @@ outside India; 28 appears in older (pre-2014 Andhra Pradesh) GSTINs.
 ## Validator
 
 ```bash
-V=${CLAUDE_SKILL_DIR}/scripts/india_validate.py
-python $V gstin 27AAPFU0939F1ZV
-python $V pan ABCPE1234F
-python $V ifsc HDFC0001234
-python $V aadhaar 2345 6789 0124          # prints only the masked number
-python $V aadhaar 234567890124 --mask     # XXXX XXXX 0124
-python $V mobile "+91 98765 43210"
-python $V auto 27AAPFU0939F1ZV HDFC0001234 ABCPE1234F asha@okicici
-python $V --json gstin 27AAPFU0939F1ZV
+python ${CLAUDE_SKILL_DIR}/scripts/india_validate.py gstin 27AAPFU0939F1ZV
+python ${CLAUDE_SKILL_DIR}/scripts/india_validate.py pan ABCPE1234F
+python ${CLAUDE_SKILL_DIR}/scripts/india_validate.py ifsc HDFC0001234
+python ${CLAUDE_SKILL_DIR}/scripts/india_validate.py aadhaar 2345 6789 0124          # prints only the masked number
+python ${CLAUDE_SKILL_DIR}/scripts/india_validate.py aadhaar 234567890124 --mask     # XXXX XXXX 0124
+python ${CLAUDE_SKILL_DIR}/scripts/india_validate.py mobile "+91 98765 43210"
+python ${CLAUDE_SKILL_DIR}/scripts/india_validate.py auto 27AAPFU0939F1ZV HDFC0001234 ABCPE1234F asha@okicici
+python ${CLAUDE_SKILL_DIR}/scripts/india_validate.py --json gstin 27AAPFU0939F1ZV
 ```
 
 Exit code is 0 only if every value is valid, so it works in scripts and CI.
