@@ -139,6 +139,7 @@ Corrections with a link to the official circular or notification are the most
 valuable contribution. See [CONTRIBUTING.md](CONTRIBUTING.md) and run
 `python tests/validate_repo.py` before opening a PR. More free Claude Code packs
 from Viprasol:
+[claude-market-data-skills](https://github.com/Viprasol-Tech/claude-market-data-skills) ·
 [claude-prop-firm-skills](https://github.com/Viprasol-Tech/claude-prop-firm-skills) ·
 [claude-options-trading-skills](https://github.com/Viprasol-Tech/claude-options-trading-skills) ·
 [claude-tradingview-automation-skills](https://github.com/Viprasol-Tech/claude-tradingview-automation-skills) ·
